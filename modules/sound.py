@@ -1,3 +1,5 @@
+# Cyberpulse sound module by jjkay03
+
 import winsound
 
 winsound_list = [

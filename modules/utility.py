@@ -1,3 +1,5 @@
+# Cyberpulse utility module by jjkay03
+
 import os
 
 # Function: Deletes all files inside a dir

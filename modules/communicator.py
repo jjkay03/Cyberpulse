@@ -1,3 +1,5 @@
+# Cyberpulse communicator module by jjkay03
+
 import subprocess
 
 note_number = 1

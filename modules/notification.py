@@ -1,3 +1,6 @@
+# Cyberpulse notification module by jjkay03
+
+from .logger import log  # Cyberpulse modules
 from notifypy import Notify
 
 

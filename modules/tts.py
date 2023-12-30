@@ -1,3 +1,5 @@
+# Cyberpulse tts module by jjkay03
+
 import pyttsx3
 
 # Function: Set the voice for the TTS

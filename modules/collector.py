@@ -1,3 +1,5 @@
+# Cyberpulse Collector module by jjkay03
+
 import socket
 import getpass
 
