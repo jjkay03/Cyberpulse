@@ -18,3 +18,4 @@ def notification(app=" ", title=" ", message=" ", icon=" "):
     else: notification.icon = icon
     
     notification.send()
+    log("Sending notification", debug=True)

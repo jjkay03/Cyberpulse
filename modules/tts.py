@@ -1,5 +1,6 @@
 # Cyberpulse tts module by jjkay03
 
+from .logger import log  # Cyberpulse modules
 import pyttsx3
 
 # Function: Set the voice for the TTS
@@ -14,3 +15,4 @@ def tts(text, voice_id=0, rate=175):
     engine.setProperty('rate', rate) # Set the speech rate
     engine.say(text)
     engine.runAndWait()
+    log(f"Speaking TTS message: '{text}'", debug=True)

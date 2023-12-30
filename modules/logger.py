@@ -5,7 +5,7 @@ import datetime
 import inspect
 
 
-log_debug_mode = False
+log_debug_mode = True
 log_folder_path = "logs"
 log_file_path = ""
 log_folder_created = False
@@ -17,6 +17,7 @@ def log_create_file():
 
     if not os.path.exists(log_folder_path): # Make a log folder
         os.mkdir(log_folder_path)
+        log_folder_created = True
 
     log_file_path = os.path.join(log_folder_path, datetime.datetime.now().strftime("%Y-%m-%d - %H-%M-%S") + '.log')
     with open(log_file_path, 'w'): pass # Create log file
@@ -37,7 +38,7 @@ def log(message, debug=False):
         log_message = f"[{current_time} DEBUG]: [{caller_module}.py] {message}"
     
     # If log debug mode is off and debug message ignore the debug
-    if log_debug_mode==False and debug==True:
+    elif log_debug_mode==False and debug==True:
         return
     
     # If normal log message log it
