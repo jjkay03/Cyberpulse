@@ -1,13 +1,11 @@
 # Cyberpulse notification module by jjkay03
 
 from .logger import log  # Cyberpulse modules
-#from notifypy import Notify
+# from notifypy import Notify
 
 
 icon_path_pc = "assets/icons/pc.ico"
 
-
-# Doesn't work with py 3.12 change it
 '''
 # Function: Sends a windows notification
 def notification(app=" ", title=" ", message=" ", icon=" "):

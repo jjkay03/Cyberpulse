@@ -5,6 +5,9 @@ import os
 
 # Function: Deletes all files inside a dir
 def clear_dir(directory, ignored_files=[]):
+
+    ignored_files.append(".gitkeep")  # Ensure .gitkeep is always ignored
+    
     try:
         for filename in os.listdir(directory):
             file_path = os.path.join(directory, filename)
@@ -17,5 +20,3 @@ def clear_dir(directory, ignored_files=[]):
     
     except Exception as e:
         print(f"An error occurred: {e}")
-    
-    
